@@ -1,0 +1,25 @@
+{
+  "description": "微信网页防撤回",
+  "manifest_version": 2,
+  "name": "wechat web never withdraw",
+  "version": "1.0",
+  "homepage_url": "https://wx.qq.com",
+  "icons": {
+    "48": "pen.svg"
+  },
+
+  "permissions": [
+    "webRequest", "webRequestBlocking", "https://wx.qq.com/*"
+  ],
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "applications": {
+    "gecko": {
+      "strict_min_version": "57.0a1"
+    }
+  }
+
+}
